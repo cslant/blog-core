@@ -13,12 +13,12 @@ class BlogApiServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        $routePath = __DIR__.'/../../routes/blog-api.php';
+        $routePath = __DIR__.'/../../routes/blog-core.php';
         if (file_exists($routePath)) {
             $this->loadRoutesFrom($routePath);
         }
 
-        $this->loadTranslationsFrom(__DIR__.'/../../lang', 'blog-api');
+        $this->loadTranslationsFrom(__DIR__.'/../../lang', 'blog-core');
 
         $this->registerCommands();
 
@@ -32,8 +32,8 @@ class BlogApiServiceProvider extends ServiceProvider
      */
     public function register(): void
     {
-        $configPath = __DIR__.'/../../config/blog-api.php';
-        $this->mergeConfigFrom($configPath, 'blog-api');
+        $configPath = __DIR__.'/../../config/blog-core.php';
+        $this->mergeConfigFrom($configPath, 'blog-core');
     }
 
     /**
@@ -43,7 +43,7 @@ class BlogApiServiceProvider extends ServiceProvider
      */
     public function provides(): ?array
     {
-        return ['blog-api'];
+        return ['blog-core'];
     }
 
     /**
@@ -61,13 +61,13 @@ class BlogApiServiceProvider extends ServiceProvider
      */
     protected function registerAssetPublishing(): void
     {
-        $configPath = __DIR__.'/../../config/blog-api.php';
+        $configPath = __DIR__.'/../../config/blog-core.php';
         $this->publishes([
-            $configPath => config_path('blog-api.php'),
+            $configPath => config_path('blog-core.php'),
         ], 'config');
 
         $this->publishes([
-            __DIR__.'/../../lang' => resource_path('lang/packages/blog-api'),
+            __DIR__.'/../../lang' => resource_path('lang/packages/blog-core'),
         ], 'lang');
     }
 }
