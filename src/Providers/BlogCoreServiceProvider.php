@@ -13,7 +13,6 @@ class BlogCoreServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        dd('Hello from BlogCoreServiceProvider');
         $routePath = __DIR__.'/../../routes/blog-core.php';
         if (file_exists($routePath)) {
             $this->loadRoutesFrom($routePath);
