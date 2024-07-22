@@ -4,7 +4,7 @@ namespace CSlant\Blog\Core\Providers;
 
 use Illuminate\Support\ServiceProvider;
 
-class Blog\CoreServiceProvider extends ServiceProvider
+class BlogCoreServiceProvider extends ServiceProvider
 {
     /**
      * Bootstrap services.
@@ -13,6 +13,7 @@ class Blog\CoreServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
+        dd('Hello from BlogCoreServiceProvider');
         $routePath = __DIR__.'/../../routes/blog-core.php';
         if (file_exists($routePath)) {
             $this->loadRoutesFrom($routePath);
