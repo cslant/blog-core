@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Route;
 
 /*
 |--------------------------------------------------------------------------
-| Blog API Routes
+| Blog Core Routes
 |--------------------------------------------------------------------------
 |
 | Here is where you can register bot routes for your application. These
@@ -13,12 +13,3 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-$routePrefix = config('blog-api.defaults.route_prefix');
-
-Route::prefix($routePrefix)->name("$routePrefix.")->group(function () {
-    Route::get('/posts', function () {
-        return response()->json([
-            'message' => 'Hello from the blog API!',
-        ]);
-    });
-});
