@@ -13,7 +13,7 @@
         </include>
     </coverage>
     <testsuites>
-        <testsuite name="CSlant Blog API Package">
+        <testsuite name="CSlant Blog Core Package">
             <directory>tests</directory>
         </testsuite>
     </testsuites>

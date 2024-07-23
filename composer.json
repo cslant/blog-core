@@ -1,15 +1,15 @@
 {
   "name": "cslant/blog-core",
-  "description": "Send notification from Gitlab and Github events to Telegram",
+  "description": "A Laravel package for CSlant blog Core",
   "keywords": [
     "cslant",
     "laravel",
-    "cslant-blog-api-package",
-    "cslant-blog-api",
+    "cslant-blog-core-package",
+    "cslant-blog-core",
     "cslant-blog",
-    "cslant-api",
+    "cslant-core",
     "cslant-package",
-    "blog-api-package",
+    "blog-core-package",
     "blog-core"
   ],
   "homepage": "https://github.com/cslant/blog-core",
