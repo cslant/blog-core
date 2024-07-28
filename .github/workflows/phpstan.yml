@@ -26,6 +26,7 @@ jobs:
       - name: Install dependencies
         run: |
           composer install --no-interaction --no-progress --no-suggest
+          composer require cslant/laravel-telegram-git-notifier
       - name: Run PHPStan
         run: |
           composer analyse --error-format=github
