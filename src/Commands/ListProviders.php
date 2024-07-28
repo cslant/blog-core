@@ -10,7 +10,7 @@ class ListProviders extends Command
     protected $signature = 'providers:list';
     protected $description = 'List all registered service providers';
 
-    public function handle()
+    public function handle(): void
     {
         $providers = App::getLoadedProviders();
 
