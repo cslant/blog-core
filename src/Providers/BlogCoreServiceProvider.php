@@ -47,7 +47,7 @@ class BlogCoreServiceProvider extends ServiceProvider
     protected function registerCommands(): void
     {
         $this->commands([
-            //
+            \CSlant\Blog\Core\Commands\ListProviders::class,
         ]);
     }
 
