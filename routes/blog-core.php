@@ -1,14 +1,11 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
-
 /*
 |--------------------------------------------------------------------------
 | Blog Core Routes
 |--------------------------------------------------------------------------
 |
-| Here is where you can register bot routes for your application. These
-| routes are loaded by the RouteServiceProvider and all of them will
+| Here is where you can register core routes for your application. The RouteServiceProvider and all of they load these | routes will
 | be assigned to the "core" middleware group. Enjoy building your API!
 |
 */
