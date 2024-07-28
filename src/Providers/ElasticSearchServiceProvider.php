@@ -14,7 +14,7 @@ class ElasticSearchServiceProvider extends ServiceProvider
      */
     public function register(): void
     {
-        $this->app->register(ElasticSearchServiceProvider::class);
+        $this->app->register(ScoutElasticSearchServiceProvider::class);
     }
 
     /**
