@@ -18,6 +18,11 @@ $indices = [
     ],
 ];
 
+// Load elasticsearch indices from the application (if available).
+if (function_exists('elasticsearch_indices')) {
+    $indices = elasticsearch_indices();
+}
+
 return [
     'host' => env('ELASTICSEARCH_HOST'),
     'user' => env('ELASTICSEARCH_USER'),
