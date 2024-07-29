@@ -13,8 +13,6 @@ class BlogCoreServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        $this->registerCommands();
-
         $this->registerAssetLoading();
 
         $this->registerAssetPublishing();
@@ -27,8 +25,9 @@ class BlogCoreServiceProvider extends ServiceProvider
      */
     public function register(): void
     {
-        $configPath = __DIR__.'/../../config/blog-core.php';
-        $this->mergeConfigFrom($configPath, 'blog-core');
+        $this->registerConfigs();
+
+        $this->registerCommands();
     }
 
     /**
@@ -77,5 +76,26 @@ class BlogCoreServiceProvider extends ServiceProvider
         }
 
         $this->loadTranslationsFrom(__DIR__.'/../../lang', 'blog-core');
+    }
+
+    /**
+     * Register configs.
+     *
+     * @return void
+     */
+    protected function registerConfigs(): void
+    {
+        $configDir = __DIR__.'/../../config';
+        $files = scandir($configDir);
+
+        if ($files === false) {
+            return;
+        }
+
+        foreach ($files as $file) {
+            if (pathinfo($file, PATHINFO_EXTENSION) === 'php') {
+                $this->mergeConfigFrom($configDir . '/' . $file, pathinfo($file, PATHINFO_FILENAME));
+            }
+        }
     }
 }
