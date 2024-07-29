@@ -13,14 +13,9 @@ class BlogCoreServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        $routePath = __DIR__.'/../../routes/blog-core.php';
-        if (file_exists($routePath)) {
-            $this->loadRoutesFrom($routePath);
-        }
-
-        $this->loadTranslationsFrom(__DIR__.'/../../lang', 'blog-core');
-
         $this->registerCommands();
+
+        $this->registerAssetLoading();
 
         $this->registerAssetPublishing();
     }
@@ -52,7 +47,7 @@ class BlogCoreServiceProvider extends ServiceProvider
     protected function registerCommands(): void
     {
         $this->commands([
-            //
+            \CSlant\Blog\Core\Commands\ListProviders::class,
         ]);
     }
 
@@ -69,5 +64,18 @@ class BlogCoreServiceProvider extends ServiceProvider
         $this->publishes([
             __DIR__.'/../../lang' => resource_path('lang/packages/blog-core'),
         ], 'lang');
+    }
+
+    /**
+     * @return void
+     */
+    protected function registerAssetLoading(): void
+    {
+        $routePath = __DIR__.'/../../routes/blog-core.php';
+        if (file_exists($routePath)) {
+            $this->loadRoutesFrom($routePath);
+        }
+
+        $this->loadTranslationsFrom(__DIR__.'/../../lang', 'blog-core');
     }
 }

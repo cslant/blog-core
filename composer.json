@@ -62,7 +62,8 @@
   "extra": {
     "laravel": {
       "providers": [
-        "CSlant\\Blog\\Core\\Providers\\BlogCoreServiceProvider"
+        "CSlant\\Blog\\Core\\Providers\\BlogCoreServiceProvider",
+        "CSlant\\Blog\\Core\\Providers\\ElasticSearchServiceProvider"
       ]
     }
   },
