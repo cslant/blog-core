@@ -88,6 +88,10 @@ class BlogCoreServiceProvider extends ServiceProvider
         $configDir = __DIR__.'/../../config';
         $files = scandir($configDir);
 
+        if ($files === false) {
+            return;
+        }
+
         foreach ($files as $file) {
             if (pathinfo($file, PATHINFO_EXTENSION) === 'php') {
                 $this->mergeConfigFrom($configDir . '/' . $file, pathinfo($file, PATHINFO_FILENAME));
