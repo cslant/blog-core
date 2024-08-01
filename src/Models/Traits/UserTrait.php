@@ -13,6 +13,8 @@ use CSlant\Blog\ElasticScout\Modules\Traits\SearchableAs;
  */
 trait UserTrait
 {
+    use SearchableAs;
+
     public function searchableAs(): string
     {
         return $this->userSearchableAs();
