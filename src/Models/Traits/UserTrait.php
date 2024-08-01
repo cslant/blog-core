@@ -9,7 +9,7 @@ use CSlant\Blog\ElasticScout\Modules\Traits\SearchableAs;
  * @package CSlant\Blog\Core\Models\Traits
  * @mixin SearchableAs
  *
- * @method string userSearchableAs()
+ * @method string userSearchableAs() see \CSlant\Blog\ElasticScout\Modules\Traits\SearchableAs::userSearchableAs()
  */
 trait UserTrait
 {
