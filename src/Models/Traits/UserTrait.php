@@ -1,0 +1,20 @@
+<?php
+
+namespace CSlant\Blog\Core\Models\Traits;
+
+use CSlant\Blog\ElasticScout\Modules\Traits\SearchableAs;
+
+/**
+ * Trait UserTrait
+ * @package CSlant\Blog\Core\Models\Traits
+ * @mixin SearchableAs
+ *
+ * @method string userSearchableAs()
+ */
+trait UserTrait
+{
+    public function searchableAs(): string
+    {
+        return $this->userSearchableAs();
+    }
+}
