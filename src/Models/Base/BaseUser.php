@@ -6,5 +6,4 @@ use Botble\ACL\Models\User as BotbleUser;
 
 class BaseUser extends BotbleUser
 {
-
 }

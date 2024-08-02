@@ -39,8 +39,8 @@ trait UserTrait
             'last_name' => $this->last_name,
             'username' => $this->username,
             'permissions' => $this->permissions,
-            'avatar' => $this->avatar ? $this->avatar->name : null,
-            'avatar_url' => $this->avatar ? $this->avatar->url : null,
+            'avatar' => $this->avatar?->name ?? null,
+            'avatar_url' => $this->avatar?->url ?? null,
         ];
     }
 }
