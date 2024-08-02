@@ -2,7 +2,7 @@
 
 namespace CSlant\Blog\Core\Models\Traits;
 
-use Botble\ACL\Models\User;
+use CSlant\Blog\Core\Models\User;
 use CSlant\Blog\ElasticScout\Modules\Traits\SearchableAs;
 use Illuminate\Support\Facades\Log;
 use Laravel\Scout\Searchable;
@@ -28,9 +28,7 @@ trait UserTrait
     {
         Log::info("UserTrait::toSearchableArray(), Es User: " . $this->getKey());
 
-        /**
-         * @var User $this
-         */
+        /** @var User $this */
         return [
             'id' => $this->id,
             'email' => $this->email,
