@@ -98,7 +98,10 @@ class BlogCoreServiceProvider extends ServiceProvider
                 $configPath = $configDir.'/'.$file;
 
                 if (file_exists(config_path($configName.'.php'))) {
-                    config()->set($configName, array_merge(config($configName), require $configPath));
+                    config()->set($configName, array_merge(
+                        is_array(config($configName)) ? config($configName) : [],
+                        require $configPath
+                    ));
                 } else {
                     $this->mergeConfigFrom($configPath, $configName);
                 }
