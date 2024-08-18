@@ -94,7 +94,17 @@ class BlogCoreServiceProvider extends ServiceProvider
 
         foreach ($files as $file) {
             if (pathinfo($file, PATHINFO_EXTENSION) === 'php') {
-                $this->mergeConfigFrom($configDir . '/' . $file, pathinfo($file, PATHINFO_FILENAME));
+                $configName = pathinfo($file, PATHINFO_FILENAME);
+                $configPath = $configDir.'/'.$file;
+
+                if (file_exists(config_path($configName.'.php'))) {
+                    config()->set($configName, array_merge(
+                        is_array(config($configName)) ? config($configName) : [],
+                        require $configPath
+                    ));
+                } else {
+                    $this->mergeConfigFrom($configPath, $configName);
+                }
             }
         }
     }
