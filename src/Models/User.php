@@ -8,6 +8,7 @@ use CSlant\Blog\Core\Models\Base\BaseUser;
  * Class User
  * @package CSlant\Blog\Core\Models
  *
+ * @property int $id
  * @property string $name
  * @property string $email
  * @property string $password

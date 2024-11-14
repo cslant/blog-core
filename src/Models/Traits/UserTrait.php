@@ -64,6 +64,6 @@ trait UserTrait
      */
     public function shouldBeSearchable(): bool
     {
-        return !$this->trashed();
+        return !$this->wasChanged();
     }
 }
