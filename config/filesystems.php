@@ -100,6 +100,7 @@ return [
 
     'links' => [
         public_path('storage') => env('FILESYSTEM_FILE_ROOT', storage_path('app/public')),
+        lang_path() => env('LANG_FILE_ROOT', base_path('lang')),
     ],
 
 ];
