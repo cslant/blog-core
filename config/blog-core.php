@@ -3,7 +3,11 @@
 return [
     'name' => 'BlogCore',
 
-    'fe_url' => env('BLOG_FE_URL', 'https://cslant.com/blog'),
+    'fe_path' => env('BLOG_FE_PATH', 'blog'),
+    'fe_url' => env('BLOG_FE_URL', 'https://cslant.com'),
+    'fe_url_with_path' => env('BLOG_FE_URL', 'https://cslant.com') . '/' . env('BLOG_FE_PATH', 'blog'),
 
-    'admin_url' => env('BLOG_ADMIN_URL', 'https://cslant.com/admin/blog'),
+    'admin_path' => env('BLOG_ADMIN_PATH', 'admin/blog'),
+    'admin_url' => env('BLOG_ADMIN_URL', 'https://cslant.com'),
+    'admin_url_with_path' => env('BLOG_ADMIN_URL', 'https://cslant.com') . '/' . env('BLOG_ADMIN_PATH', 'admin/blog'),
 ];
