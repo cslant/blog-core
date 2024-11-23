@@ -10,3 +10,8 @@
 |
 */
 
+use Illuminate\Support\Facades\Route;
+
+Route::get('/index', function () {
+    return redirect('https://cslant.com');
+})->name('blog-core.index');
