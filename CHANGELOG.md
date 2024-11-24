@@ -2,13 +2,31 @@
 
 Here you can see the full list of changes between each Blog Core release.
 
+## v0.2.0 - 2024-11-24
+
+### What's Changed
+
+* #19 feat: create register config method to register all config file i… by @tanhongit in https://github.com/cslant/blog-core/pull/24
+* Info - My Truong by @mytruong-z in https://github.com/cslant/blog-core/pull/25
+* Feature/setup elasticsearch mapping configs #26 by @tanhongit in https://github.com/cslant/blog-core/pull/27
+* Fix/elasticsearch import for user by @tanhongit in https://github.com/cslant/blog-core/pull/28
+* feat: Create a config to override filesystem by @tanhongit in https://github.com/cslant/blog-core/pull/30
+
+### New Contributors
+
+* @mytruong-z made their first contribution in https://github.com/cslant/blog-core/pull/25
+
+**Full Changelog**: https://github.com/cslant/blog-core/compare/v0.1.1...v0.2.0
+
 ## v0.1.1 - 2024-07-29
 
 ### What's Changed
+
 * updated docs and removed unnecessary lines by @avaelo in https://github.com/cslant/blog-core/pull/21
 * Feature/handle first elasticsearch config #19 by @tanhongit in https://github.com/cslant/blog-core/pull/22
 
 ### New Contributors
+
 * @avaelo made their first contribution in https://github.com/cslant/blog-core/pull/21
 
 **Full Changelog**: https://github.com/cslant/blog-core/compare/v0.1.0...v0.1.1
@@ -16,6 +34,7 @@ Here you can see the full list of changes between each Blog Core release.
 ## v0.1.0 - 2024-07-28
 
 ### What's Changed
+
 * Feature/first generate core package #1 by @pxthinh in https://github.com/cslant/blog-core/pull/10
 * Feature/first generate core package #1 by @tanhongit in https://github.com/cslant/blog-core/pull/11
 * feat: change text api to core #1 by @pxthinh in https://github.com/cslant/blog-core/pull/13
@@ -26,6 +45,7 @@ Here you can see the full list of changes between each Blog Core release.
 * install scout and elastic packages #7 by @tanhongit in https://github.com/cslant/blog-core/pull/12
 
 ### New Contributors
+
 * @pxthinh made their first contribution in https://github.com/cslant/blog-core/pull/10
 * @tanhongit made their first contribution in https://github.com/cslant/blog-core/pull/11
 
