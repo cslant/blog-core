@@ -44,7 +44,7 @@ return [
 
     'queue' => [
         'connection' => env('SCOUT_QUEUE_USING', 'database'),
-        'queue' => env('SCOUT_QUEUE_NAME', 'build.elasticsearch')
+        'queue' => env('SCOUT_QUEUE_NAME', 'build.elasticsearch'),
     ],
 
     /*
