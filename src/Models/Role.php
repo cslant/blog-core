@@ -3,9 +3,11 @@
 namespace CSlant\Blog\Core\Models;
 
 use CSlant\Blog\Core\Models\Base\BaseRole;
+use Illuminate\Database\Eloquent\Builder;
 
 /**
  * Class Role
+ *
  * @package CSlant\Blog\Core\Models
  *
  * @property int $id
@@ -19,6 +21,13 @@ use CSlant\Blog\Core\Models\Base\BaseRole;
  * @property int $updated_by
  * @property string $created_at
  * @property string $updated_at
+ *
+ * @method static Builder|Role newModelQuery()
+ * @method static Builder|Role newQuery()
+ * @method static Builder|Role query()
+ * @method static Builder|Role first()
+ * @method static Builder|Role find()
+ * @method static Builder|Role whereCreatedAt($value)
  */
 class Role extends BaseRole
 {
