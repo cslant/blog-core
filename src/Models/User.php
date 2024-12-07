@@ -18,7 +18,7 @@ use CSlant\Blog\Core\Models\Base\BaseUser;
  * @property string $username
  * @property array $permissions
  * @property string $avatar_url Property for avatar image url
- * @property array $roles
+ * @property Role $roles
  *
  */
 class User extends BaseUser
