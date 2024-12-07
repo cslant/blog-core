@@ -2,6 +2,7 @@
 
 namespace CSlant\Blog\Core\Models;
 
+use AllowDynamicProperties;
 use CSlant\Blog\Core\Models\Base\BaseCategory;
 
 /**
@@ -25,6 +26,7 @@ use CSlant\Blog\Core\Models\Base\BaseCategory;
  * @property string $url
  * @mixin BaseCategory
  */
+#[AllowDynamicProperties]
 class Category extends BaseCategory
 {
 }

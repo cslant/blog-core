@@ -2,6 +2,7 @@
 
 namespace CSlant\Blog\Core\Models;
 
+use AllowDynamicProperties;
 use CSlant\Blog\Core\Models\Base\BasePost;
 
 /**
@@ -28,6 +29,7 @@ use CSlant\Blog\Core\Models\Base\BasePost;
  * @property string $author
  * @mixin BasePost
  */
+#[AllowDynamicProperties]
 class Post extends BasePost
 {
 }

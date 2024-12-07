@@ -2,6 +2,7 @@
 
 namespace CSlant\Blog\Core\Models;
 
+use AllowDynamicProperties;
 use CSlant\Blog\Core\Models\Base\BaseUser;
 use Illuminate\Database\Eloquent\Builder;
 
@@ -30,6 +31,7 @@ use Illuminate\Database\Eloquent\Builder;
  * @method static Builder|User whereCreatedAt($value)
  *
  */
+#[AllowDynamicProperties]
 class User extends BaseUser
 {
 }

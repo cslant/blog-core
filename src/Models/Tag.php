@@ -2,6 +2,7 @@
 
 namespace CSlant\Blog\Core\Models;
 
+use AllowDynamicProperties;
 use CSlant\Blog\Core\Models\Base\BaseTag;
 
 /**
@@ -19,6 +20,7 @@ use CSlant\Blog\Core\Models\Base\BaseTag;
  * @property string $slug
  * @mixin BaseTag
  */
+#[AllowDynamicProperties]
 class Tag extends BaseTag
 {
 }
