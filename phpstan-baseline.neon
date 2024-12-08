@@ -1,4 +1,5 @@
 parameters:
     excludePaths:
         - src/Http/Controllers/Base/*.php
+        - src/Http/Responses/Base/*.php
         - src/Models/Base/*.php
