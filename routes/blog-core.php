@@ -13,5 +13,5 @@
 use Illuminate\Support\Facades\Route;
 
 Route::get('/index', function () {
-    return redirect('https://cslant.com/not-found', 301);
+    return redirect('https://cslant.com', 301);
 })->name('blog-core.index');
