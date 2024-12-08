@@ -1,4 +1,5 @@
 parameters:
     excludePaths:
         - src/Http/*/Base/*.php
+        - src/Facades/Base/*.php
         - src/Models/Base/*.php
