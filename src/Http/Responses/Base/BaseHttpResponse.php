@@ -13,7 +13,7 @@ use Illuminate\Http\Resources\Json\JsonResource;
  * @package CSlant\Blog\Core\Http\Responses\Base
  *
  * @method self setData(mixed $data)
- * @method self|JsonResponse|JsonResource|RedirectResponse toApiResponse()
+ * @method JsonResource|JsonResponse|RedirectResponse|self toApiResponse()
  */
 class BaseHttpResponse extends BotbleBaseHttpResponse
 {
