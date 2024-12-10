@@ -2,6 +2,10 @@
 
 Here you can see the full list of changes between each Blog Core release.
 
+## v0.3.0 - 2024-12-10
+
+**Full Changelog**: https://github.com/cslant/blog-core/compare/v0.2.0...v0.3.0
+
 ## v0.2.0 - 2024-11-24
 
 ### What's Changed
