@@ -3,6 +3,7 @@
 namespace CSlant\Blog\Core\Facades\Base\Media;
 
 use Botble\Media\Facades\RvMedia as BaseRvMedia;
+use CSlant\Blog\Core\Models\MediaFile;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Illuminate\Http\UploadedFile;
@@ -21,8 +22,8 @@ use Illuminate\Support\HtmlString;
  * @method static string url(string|null $path)
  * @method static string getDefaultImage(bool $relative = false, string|null $size = null)
  * @method static string|null getSize(string $name)
- * @method static bool deleteFile(\Botble\Media\Models\MediaFile $file)
- * @method static bool deleteThumbnails(\Botble\Media\Models\MediaFile $file)
+ * @method static bool deleteFile(MediaFile $file)
+ * @method static bool deleteThumbnails(MediaFile $file)
  * @method static array getPermissions()
  * @method static void setPermissions(array $permissions)
  * @method static void removePermission(string $permission)
@@ -35,7 +36,7 @@ use Illuminate\Support\HtmlString;
  * @method static array handleUpload(UploadedFile|null $fileUpload, string|int|null $folderId = 0, string|null $folderSlug = null, bool $skipValidation = false)
  * @method static float getServerConfigMaxUploadFileSize()
  * @method static float parseSize(string|int $size)
- * @method static bool generateThumbnails(\Botble\Media\Models\MediaFile $file, UploadedFile|null $fileUpload = null)
+ * @method static bool generateThumbnails(MediaFile $file, UploadedFile|null $fileUpload = null)
  * @method static bool insertWatermark(string $image)
  * @method static string getRealPath(string|null $url)
  * @method static bool isImage(string $mimeType)
@@ -63,7 +64,7 @@ use Illuminate\Support\HtmlString;
  * @method static void setBunnyCdnDisk(array $config)
  * @method static HtmlString image(string|null $url, string|null $alt = null, string|null $size = null, bool $useDefaultImage = true, array $attributes = [], bool|null $secure = null)
  * @method static string|null getFileSize(string|null $path)
- * @method static void renameFile(\Botble\Media\Models\MediaFile $file, string $newName, bool $renameOnDisk = true)
+ * @method static void renameFile(MediaFile $file, string $newName, bool $renameOnDisk = true)
  * @method static void renameFolder(\Botble\Media\Models\MediaFolder $folder, string $newName, bool $renameOnDisk = true)
  * @method static void refreshCache()
  * @method static array getFolderColors()
