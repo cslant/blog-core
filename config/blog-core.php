@@ -14,4 +14,6 @@ return [
     'api_path' => env('BLOG_API_PATH', 'api/blog'),
     'api_url' => env('BLOG_API_URL', 'https://cslant.com'),
     'api_url_with_path' => env('BLOG_API_URL', 'https://cslant.com') . '/' . env('BLOG_API_PATH', 'api/blog'),
+
+    'laravel_domain' => env('LARAVEL_BLOG_DOMAIN', ''),
 ];
