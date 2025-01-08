@@ -3,3 +3,4 @@ parameters:
         - src/Http/*/Base/*.php
         - src/Facades/Base/*.php
         - src/Models/Base/*.php
+        - src/Helpers/Base/*.php
