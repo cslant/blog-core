@@ -72,6 +72,4 @@ use Illuminate\Support\HtmlString;
  *
  * @see \Botble\Media\RvMedia
  */
-class RvMedia extends BaseRvMedia
-{
-}
+class RvMedia extends BaseRvMedia {}
