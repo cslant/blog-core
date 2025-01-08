@@ -3,6 +3,7 @@
 namespace CSlant\Blog\Core\Models;
 
 use AllowDynamicProperties;
+use Carbon\Carbon;
 use CSlant\Blog\Core\Models\Base\BaseTag;
 
 /**
@@ -15,8 +16,8 @@ use CSlant\Blog\Core\Models\Base\BaseTag;
  * @property string $status
  * @property int $author_id
  * @property string $author_type
- * @property string $created_at
- * @property string $updated_at
+ * @property Carbon $created_at
+ * @property Carbon $updated_at
  * @property string $slug
  * @mixin BaseTag
  */

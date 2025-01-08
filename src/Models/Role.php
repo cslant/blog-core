@@ -3,6 +3,7 @@
 namespace CSlant\Blog\Core\Models;
 
 use AllowDynamicProperties;
+use Carbon\Carbon;
 use CSlant\Blog\Core\Models\Base\BaseRole;
 use Illuminate\Database\Eloquent\Builder;
 
@@ -20,8 +21,8 @@ use Illuminate\Database\Eloquent\Builder;
  * @property int $is_default
  * @property int $created_by
  * @property int $updated_by
- * @property string $created_at
- * @property string $updated_at
+ * @property Carbon $created_at
+ * @property Carbon $updated_at
  *
  * @method static Builder|Role newModelQuery()
  * @method static Builder|Role newQuery()

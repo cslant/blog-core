@@ -3,6 +3,7 @@
 namespace CSlant\Blog\Core\Models;
 
 use AllowDynamicProperties;
+use Carbon\Carbon;
 use CSlant\Blog\Core\Models\Base\BaseCategory;
 
 /**
@@ -20,8 +21,8 @@ use CSlant\Blog\Core\Models\Base\BaseCategory;
  * @property int $order
  * @property int $is_featured
  * @property int $is_default
- * @property string $created_at
- * @property string $updated_at
+ * @property Carbon $created_at
+ * @property Carbon $updated_at
  * @property string $slug
  * @property string $url
  * @mixin BaseCategory
