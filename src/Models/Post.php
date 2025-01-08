@@ -5,9 +5,11 @@ namespace CSlant\Blog\Core\Models;
 use AllowDynamicProperties;
 use Carbon\Carbon;
 use CSlant\Blog\Core\Models\Base\BasePost;
+use Illuminate\Database\Eloquent\Builder;
 
 /**
  * Class Post
+ *
  * @package CSlant\Blog\Core\Models
  *
  * @property int $id
@@ -28,6 +30,9 @@ use CSlant\Blog\Core\Models\Base\BasePost;
  * @property array $categories
  * @property string $image
  * @property string $author
+ *
+ * @method static Builder|Post query()
+ *
  * @mixin BasePost
  */
 #[AllowDynamicProperties]
