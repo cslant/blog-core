@@ -15,4 +15,6 @@ use Illuminate\Http\Resources\Json\JsonResource;
  * @method self setData(mixed $data)
  * @method JsonResource|JsonResponse|RedirectResponse|self toApiResponse()
  */
-class BaseHttpResponse extends BotbleBaseHttpResponse {}
+class BaseHttpResponse extends BotbleBaseHttpResponse
+{
+}
