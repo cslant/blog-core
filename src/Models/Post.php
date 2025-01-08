@@ -33,6 +33,10 @@ use Illuminate\Database\Eloquent\Builder;
  *
  * @method static Builder|Post query()
  * @method static Builder|Post with($relations)
+ * @method static Builder|Post whereId($value)
+ * @method static Builder|Post find($id)
+ * @method static Builder|Post first()
+ * @method static Builder|Post whereIn($column, $values)
  * @method static Builder|Post where($column, $operator = null, $value = null, $boolean = 'and')
  * @method static Post findOrFail($id)
  * @method static Post create($data)

@@ -22,6 +22,8 @@ use Illuminate\Http\Resources\Json\JsonResource;
  * @method self withNextUrl(string $url)
  * @method self setError(bool $error = true)
  * @method self setCode(int $code)
+ * @method self setSaveAction(string $action)
+ * @method self setMessage(?string $message, bool $cleanHtmlTags = true)
  *
  * @method JsonResource|JsonResponse|RedirectResponse|self toApiResponse()
  */
