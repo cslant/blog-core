@@ -32,6 +32,10 @@ use Illuminate\Database\Eloquent\Builder;
  * @property string $author
  *
  * @method static Builder|Post query()
+ * @method static Builder|Post with($relations)
+ * @method static Builder|Post where($column, $operator = null, $value = null, $boolean = 'and')
+ * @method static Post findOrFail($id)
+ * @method static Post create($data)
  *
  * @mixin BasePost
  */
