@@ -4,3 +4,4 @@ parameters:
         - src/Facades/Base/*.php
         - src/Models/Base/*.php
         - src/Helpers/Base/*.php
+        - src/Supports/Base/*.php
