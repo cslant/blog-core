@@ -33,7 +33,7 @@ use Illuminate\Database\Eloquent\Builder;
  * @method static Builder|Tag where($column, $operator = null, $value = null, $boolean = 'and')
  * @method static Tag findOrFail($id)
  * @method static Tag create($data)
- * 
+ *
  * @mixin BaseTag
  */
 #[AllowDynamicProperties]

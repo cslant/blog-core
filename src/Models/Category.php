@@ -39,7 +39,7 @@ use Illuminate\Database\Eloquent\Builder;
  * @method static Builder|Category where($column, $operator = null, $value = null, $boolean = 'and')
  * @method static Category findOrFail($id)
  * @method static Category create($data)
- * 
+ *
  * @mixin BaseCategory
  */
 #[AllowDynamicProperties]
