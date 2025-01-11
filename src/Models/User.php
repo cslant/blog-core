@@ -27,7 +27,7 @@ use Illuminate\Database\Eloquent\Builder;
  * @method static Builder|User newQuery()
  * @method static Builder|User query()
  * @method static Builder|User first()
- * @method static Builder|User find()
+ * @method static Builder|User find($id)
  * @method static Builder|User whereCreatedAt($value)
  *
  */

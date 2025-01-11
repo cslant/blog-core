@@ -28,7 +28,7 @@ use Illuminate\Database\Eloquent\Builder;
  * @method static Builder|Role newQuery()
  * @method static Builder|Role query()
  * @method static Builder|Role first()
- * @method static Builder|Role find()
+ * @method static Builder|Role find($id)
  * @method static Builder|Role whereCreatedAt($value)
  */
 #[AllowDynamicProperties]
