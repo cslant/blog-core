@@ -31,7 +31,7 @@ use Illuminate\Database\Eloquent\Builder;
  * @method static Builder|Slug where($column, $operator = null, $value = null, $boolean = 'and')
  * @method static Slug findOrFail($id)
  * @method static Slug create($data)
- * 
+ *
  * @mixin BaseSlug
  */
 #[AllowDynamicProperties]
