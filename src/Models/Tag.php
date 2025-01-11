@@ -24,4 +24,8 @@ use CSlant\Blog\Core\Models\Base\BaseTag;
 #[AllowDynamicProperties]
 class Tag extends BaseTag
 {
+    public static function getBaseModel(): string
+    {
+        return 'Botble\Blog\Models\Tag';
+    }
 }
