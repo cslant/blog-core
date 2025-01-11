@@ -9,7 +9,7 @@ use Botble\Blog\Supports\FilterPost as BaseFilterPost;
  *
  * @package CSlant\Blog\Core\Supports\Base
  *
- * @method self setFilters(array $request)
+ * @method static self setFilters(mixed $request)
  */
 class FilterPost extends BaseFilterPost
 {
