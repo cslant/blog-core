@@ -3,7 +3,6 @@
 namespace CSlant\Blog\Core\Models;
 
 use AllowDynamicProperties;
-use Carbon\Carbon;
 use CSlant\Blog\Core\Models\Base\BasePage;
 use Illuminate\Database\Eloquent\Builder;
 
