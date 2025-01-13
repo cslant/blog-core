@@ -8,6 +8,6 @@ class BaseCategory extends BotbleCategory
 {
     public static function getBaseModel(): string
     {
-        return 'Botble\Page\Models\Category';
+        return 'Botble\Blog\Models\Category';
     }
 }
