@@ -45,8 +45,4 @@ use Illuminate\Database\Eloquent\Builder;
 #[AllowDynamicProperties]
 class Category extends BaseCategory
 {
-    public static function getBaseModel(): string
-    {
-        return 'Botble\Page\Models\Category';
-    }
 }

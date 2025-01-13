@@ -43,9 +43,4 @@ class MetaBox extends BaseMetaBox
         'reference_id',
         'reference_type',
     ];
-
-    public static function getBaseModel(): string
-    {
-        return 'Botble\Base\Models\MetaBox';
-    }
 }

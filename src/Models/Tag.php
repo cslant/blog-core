@@ -39,8 +39,4 @@ use Illuminate\Database\Eloquent\Builder;
 #[AllowDynamicProperties]
 class Tag extends BaseTag
 {
-    public static function getBaseModel(): string
-    {
-        return 'Botble\Blog\Models\Tag';
-    }
 }
