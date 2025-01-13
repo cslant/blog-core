@@ -5,3 +5,7 @@ parameters:
         - src/Models/Base/*.php
         - src/Helpers/Base/*.php
         - src/Supports/Base/*.php
+
+    ignoreErrors:
+        - message: '#Property CSlant\\Blog\\Core\\Models\\.*::\$fillable has no type specified#'
+          path: src/Models/*.php
