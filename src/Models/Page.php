@@ -38,4 +38,8 @@ use Illuminate\Database\Eloquent\Builder;
 #[AllowDynamicProperties]
 class Page extends BasePage
 {
+    public static function getBaseModel(): string
+    {
+        return 'Botble\Page\Models\Page';
+    }
 }

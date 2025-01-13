@@ -48,4 +48,8 @@ use Illuminate\Database\Eloquent\Builder;
 #[AllowDynamicProperties]
 class Post extends BasePost
 {
+    public static function getBaseModel(): string
+    {
+        return 'Botble\Blog\Models\Post';
+    }
 }
