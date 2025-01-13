@@ -13,14 +13,12 @@ use Illuminate\Database\Eloquent\Builder;
  * @package CSlant\Blog\Core\Models
  *
  * @property int $id
- * @property string $name
- * @property string $description
- * @property string $status
- * @property int $author_id
- * @property string $author_type
+ * @property string $meta_key
+ * @property string $meta_value
+ * @property int $reference_id
+ * @property string $reference_type
  * @property Carbon $created_at
  * @property Carbon $updated_at
- * @property string $slug
  *
  * @method static Builder|MetaBox newModelQuery()
  * @method static Builder|MetaBox newQuery()
@@ -39,6 +37,13 @@ use Illuminate\Database\Eloquent\Builder;
 #[AllowDynamicProperties]
 class MetaBox extends BaseMetaBox
 {
+    protected $fillable = [
+        'meta_key',
+        'meta_value',
+        'reference_id',
+        'reference_type',
+    ];
+
     public static function getBaseModel(): string
     {
         return 'Botble\Base\Models\MetaBox';
