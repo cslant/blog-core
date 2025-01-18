@@ -6,6 +6,7 @@ use AllowDynamicProperties;
 use Carbon\Carbon;
 use CSlant\Blog\Core\Models\Base\BasePost;
 use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Database\Eloquent\Relations\HasOne;
 
 /**
  * Class Post
@@ -24,7 +25,7 @@ use Illuminate\Database\Eloquent\Builder;
  * @property string $format_type
  * @property Carbon $created_at
  * @property Carbon $updated_at
- * @property string $slug
+ * @property Slug $slug
  * @property string $url
  * @property array $tags
  * @property array $categories
@@ -48,4 +49,9 @@ use Illuminate\Database\Eloquent\Builder;
 #[AllowDynamicProperties]
 class Post extends BasePost
 {
+    public function slug(): HasOne
+    {
+        return $this->hasOne(Slug::class, 'reference_id', 'id')
+            ->where('reference_type', $this->getBaseModel());
+    }
 }

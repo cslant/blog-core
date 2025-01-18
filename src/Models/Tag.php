@@ -6,6 +6,7 @@ use AllowDynamicProperties;
 use Carbon\Carbon;
 use CSlant\Blog\Core\Models\Base\BaseTag;
 use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Database\Eloquent\Relations\HasOne;
 
 /**
  * Class Tag
@@ -20,7 +21,7 @@ use Illuminate\Database\Eloquent\Builder;
  * @property string $author_type
  * @property Carbon $created_at
  * @property Carbon $updated_at
- * @property string $slug
+ * @property Slug $slug
  *
  * @method static Builder|Tag newModelQuery()
  * @method static Builder|Tag newQuery()
@@ -39,4 +40,9 @@ use Illuminate\Database\Eloquent\Builder;
 #[AllowDynamicProperties]
 class Tag extends BaseTag
 {
+    public function slug(): HasOne
+    {
+        return $this->hasOne(Slug::class, 'reference_id', 'id')
+            ->where('reference_type', $this->getBaseModel());
+    }
 }
