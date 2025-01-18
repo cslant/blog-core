@@ -27,6 +27,8 @@ use Illuminate\Database\Eloquent\Builder;
  * @property Carbon $updated_at
  * @property string $slug
  * @property string $url
+ * @property Category $parent
+ * @property Category[] $children
  *
  * @method static Builder|Category newModelQuery()
  * @method static Builder|Category newQuery()
