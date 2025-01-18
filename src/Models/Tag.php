@@ -40,6 +40,9 @@ use Illuminate\Database\Eloquent\Relations\HasOne;
 #[AllowDynamicProperties]
 class Tag extends BaseTag
 {
+    /**
+     * @return HasOne<Slug>
+     */
     public function slug(): HasOne
     {
         return $this->hasOne(Slug::class, 'reference_id', 'id')
