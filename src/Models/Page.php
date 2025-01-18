@@ -5,6 +5,7 @@ namespace CSlant\Blog\Core\Models;
 use AllowDynamicProperties;
 use CSlant\Blog\Core\Models\Base\BasePage;
 use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Database\Eloquent\Relations\HasOne;
 
 /**
  * Class Page
@@ -37,4 +38,12 @@ use Illuminate\Database\Eloquent\Builder;
 #[AllowDynamicProperties]
 class Page extends BasePage
 {
+    /**
+     * @return HasOne<Slug>
+     */
+    public function slug(): HasOne
+    {
+        return $this->hasOne(Slug::class, 'reference_id', 'id')
+            ->where('reference_type', $this->getBaseModel());
+    }
 }
