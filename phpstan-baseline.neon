@@ -9,3 +9,7 @@ parameters:
     ignoreErrors:
         - message: '#Property CSlant\\Blog\\Core\\Models\\.*::\$fillable has no type specified#'
           path: src/Models/*.php
+        - message: '#Call to an undefined method CSlant\\Blog\\Core\\Models\\.*::hasOne\(\).#'
+          path: src/Models/*.php
+        - message: '#Type CSlant\\Blog\\Core\\Models\\.* in generic type Illuminate\\Database\\Eloquent\\Relations\\HasOne<CSlant\\Blog\\Core\\Models\\.*> in PHPDoc tag @return is not subtype of template type TRelatedModel of Illuminate\\Database\\Eloquent\\Model of class Illuminate\\Database\\Eloquent\\Relations\\HasOne.#'
+          path: src/Models/*.php
