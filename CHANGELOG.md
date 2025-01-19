@@ -2,6 +2,14 @@
 
 Here you can see the full list of changes between each Blog Core release.
 
+## v0.4.0 - 2025-01-19
+
+### What's Changed
+
+* Feat/#31 handle meta seo by @tanhongit in https://github.com/cslant/blog-core/pull/32
+
+**Full Changelog**: https://github.com/cslant/blog-core/compare/v0.3.0...v0.4.0
+
 ## v0.3.0 - 2024-12-10
 
 **Full Changelog**: https://github.com/cslant/blog-core/compare/v0.2.0...v0.3.0
