@@ -2,6 +2,18 @@
 
 Here you can see the full list of changes between each Blog Core release.
 
+## v0.5.0 - 2025-01-28
+
+### What's Changed
+
+* chore(deps): bump dependabot/fetch-metadata from 2.2.0 to 2.3.0 by @dependabot in https://github.com/cslant/blog-core/pull/33
+
+### New Contributors
+
+* @dependabot made their first contribution in https://github.com/cslant/blog-core/pull/33
+
+**Full Changelog**: https://github.com/cslant/blog-core/compare/v0.4.0...v0.5.0
+
 ## v0.4.0 - 2025-01-19
 
 ### What's Changed
