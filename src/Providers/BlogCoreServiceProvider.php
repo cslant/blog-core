@@ -2,8 +2,6 @@
 
 namespace CSlant\Blog\Core\Providers;
 
-use CSlant\Blog\Core\Exceptions\NotFoundHandler;
-use Illuminate\Contracts\Debug\ExceptionHandler;
 use Illuminate\Support\ServiceProvider;
 
 class BlogCoreServiceProvider extends ServiceProvider
@@ -27,7 +25,6 @@ class BlogCoreServiceProvider extends ServiceProvider
      */
     public function register(): void
     {
-        $this->app->singleton(ExceptionHandler::class, NotFoundHandler::class);
         $this->registerConfigs();
 
         $this->registerCommands();
