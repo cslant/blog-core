@@ -1,5 +1,7 @@
 <?php
 
+use Illuminate\Database\Eloquent\Model;
+
 if (!function_exists('get_class_name_by_slug')) {
     /**
      * Get class name by slug.
@@ -10,16 +12,19 @@ if (!function_exists('get_class_name_by_slug')) {
      */
     function get_class_name_by_slug(string $slug): string
     {
-        if ($slug === 'post') {
-            return \CSlant\Blog\Core\Models\Post::getBaseModel();
-        } elseif ($slug === 'page') {
-            return \CSlant\Blog\Core\Models\Page::getBaseModel();
-        } elseif ($slug === 'category') {
-            return \CSlant\Blog\Core\Models\Category::getBaseModel();
-        } elseif ($slug === 'tag') {
-            return \CSlant\Blog\Core\Models\Tag::getBaseModel();
-        } else {
-            return '';
+        $models = [
+            'post' => \CSlant\Blog\Core\Models\Post::class,
+            'page' => \CSlant\Blog\Core\Models\Page::class,
+            'category' => \CSlant\Blog\Core\Models\Category::class,
+            'tag' => \CSlant\Blog\Core\Models\Tag::class,
+        ];
+
+        if (array_key_exists($slug, $models)) {
+            /** @var Model $models */
+            return $models[$slug]::getBaseModel();
         }
+
+        return '';
     }
+
 }
