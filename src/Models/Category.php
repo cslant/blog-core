@@ -12,7 +12,6 @@ use Illuminate\Database\Eloquent\Relations\HasOne;
  * Class Category
  *
  * @package CSlant\Blog\Core\Models
- * @template TModel of Category
  *
  * @property int $id
  * @property string $name
