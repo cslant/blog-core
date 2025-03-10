@@ -12,7 +12,7 @@ return [
                 /*
                  * Route for accessing api documentation interface
                  */
-                'api' => 'api/documentation',
+                'api' => env('BLOG_API_ROUTE_PREFIX', 'api').'/docs/ui',
             ],
             'paths' => [
                 /*
@@ -55,7 +55,7 @@ return [
             /*
              * Route for accessing parsed swagger annotations.
              */
-            'docs' => 'docs',
+            'docs' => env('BLOG_API_ROUTE_PREFIX', 'api').'/docs',
 
             /*
              * Route for Oauth2 authentication callback.
