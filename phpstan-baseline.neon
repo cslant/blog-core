@@ -13,3 +13,5 @@ parameters:
           path: src/Models/*.php
         - message: '#.*is used zero times and is not analysed#'
           path: *.php
+        - message: '#Method CSlant\\Blog\\Core\\Models\\.*::slug\(\) return type with generic class Illuminate\\Database\\Eloquent\\Relations\\HasOne does not specify its types: TRelatedModel, TDeclaringModel#'
+          path: src/Models/*.php
