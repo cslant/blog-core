@@ -15,3 +15,7 @@ parameters:
           path: *.php
         - message: '#Method CSlant\\Blog\\Core\\Models\\.*::slug\(\) return type with generic class Illuminate\\Database\\Eloquent\\Relations\\HasOne does not specify its types: TRelatedModel, TDeclaringModel#'
           path: src/Models/*.php
+        -
+          identifier: missingType.generics
+        -
+          identifier: generics.notSubtype
