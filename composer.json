@@ -50,7 +50,6 @@
     "php": "^8.2",
     "cslant/laravel-telegram-git-notifier": "^1.0",
     "darkaonline/l5-swagger": "^9.0.1",
-    "laravel/framework": "^12.0 || ^11.0",
     "laravel/scout": "^10.10",
     "matchish/laravel-scout-elasticsearch": "^v7.11",
     "sentry/sentry-laravel": "^4.11",
