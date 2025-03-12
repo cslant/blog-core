@@ -19,17 +19,9 @@ use Illuminate\Database\Eloquent\Builder;
  * @property string $first_name
  * @property string $last_name
  * @property string $username
- * @property array $permissions
+ * @property object $permissions
  * @property string $avatar_url Property for avatar image url
  * @property null|Role $roles
- *
- * @method static Builder|User newModelQuery()
- * @method static Builder|User newQuery()
- * @method static Builder|User query()
- * @method static Builder|User first()
- * @method static Builder|User find($id)
- * @method static Builder|User whereCreatedAt($value)
- *
  */
 #[AllowDynamicProperties]
 class User extends BaseUser

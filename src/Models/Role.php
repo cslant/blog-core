@@ -23,13 +23,6 @@ use Illuminate\Database\Eloquent\Builder;
  * @property int $updated_by
  * @property Carbon $created_at
  * @property Carbon $updated_at
- *
- * @method static Builder|Role newModelQuery()
- * @method static Builder|Role newQuery()
- * @method static Builder|Role query()
- * @method static Builder|Role first()
- * @method static Builder|Role find($id)
- * @method static Builder|Role whereCreatedAt($value)
  */
 #[AllowDynamicProperties]
 class Role extends BaseRole

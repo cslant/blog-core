@@ -27,31 +27,16 @@ use Illuminate\Database\Eloquent\Relations\HasOne;
  * @property Carbon $updated_at
  * @property Slug $slug
  * @property string $url
- * @property array $tags
- * @property array $categories
+ * @property Tag[] $tags
+ * @property Category[] $categories
  * @property string $image
  * @property string $author
- *
- * @method static Builder|Post newModelQuery()
- * @method static Builder|Post newQuery()
- * @method static Builder|Post query()
- * @method static Builder|Post first()
- * @method static Builder|Post find($id)
- * @method static Builder|Post with($relations)
- * @method static Builder|Post whereId($value)
- * @method static Builder|Post whereIn($column, $values)
- * @method static Builder|Post where($column, $operator = null, $value = null, $boolean = 'and')
- * @method static Post findOrFail($id)
- * @method static Post create($data)
  *
  * @mixin BasePost
  */
 #[AllowDynamicProperties]
 class Post extends BasePost
 {
-    /**
-     * @return HasOne<Slug>
-     */
     public function slug(): HasOne
     {
         return $this->hasOne(Slug::class, 'reference_id', 'id')
