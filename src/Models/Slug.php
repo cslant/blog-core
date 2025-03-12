@@ -5,7 +5,6 @@ namespace CSlant\Blog\Core\Models;
 use AllowDynamicProperties;
 use Carbon\Carbon;
 use CSlant\Blog\Core\Models\Base\BaseSlug;
-use Illuminate\Database\Eloquent\Builder;
 
 /**
  * Class Slug
