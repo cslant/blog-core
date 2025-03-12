@@ -4,7 +4,6 @@ namespace CSlant\Blog\Core\Models;
 
 use AllowDynamicProperties;
 use CSlant\Blog\Core\Models\Base\BaseUser;
-use Illuminate\Database\Eloquent\Builder;
 
 /**
  * Class User
