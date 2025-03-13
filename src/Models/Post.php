@@ -21,7 +21,7 @@ use Illuminate\Database\Eloquent\Relations\HasOne;
  * @property int $author_id
  * @property string $author_type
  * @property int $is_featured
- * @property int $view
+ * @property int $views
  * @property string $format_type
  * @property Carbon $created_at
  * @property Carbon $updated_at
