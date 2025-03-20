@@ -22,6 +22,7 @@ use Illuminate\Database\Eloquent\Builder;
  * @property object $permissions
  * @property string $avatar_url Property for avatar image url
  * @property null|Role $roles
+ * @property Post[] $posts
  *
  * @method static Builder|User newModelQuery()
  * @method static Builder|User newQuery()
