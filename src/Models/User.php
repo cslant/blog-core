@@ -35,4 +35,8 @@ use Illuminate\Database\Eloquent\Builder;
 #[AllowDynamicProperties]
 class User extends BaseUser
 {
+    public function posts()
+    {
+        return $this->hasMany(Post::class, 'author_id');
+    }
 }
