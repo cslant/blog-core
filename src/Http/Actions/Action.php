@@ -10,7 +10,7 @@ use Botble\Base\Http\Controllers\Concerns\HasHttpResponse;
  * @package CSlant\Blog\Api\Http\Actions
  * @group Blog Core
  */
-abstract class Action
+class Action
 {
     use HasHttpResponse;
 }
