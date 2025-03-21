@@ -5,6 +5,7 @@ namespace CSlant\Blog\Core\Models;
 use AllowDynamicProperties;
 use CSlant\Blog\Core\Models\Base\BaseUser;
 use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 
 /**
  * Class User
@@ -35,7 +36,7 @@ use Illuminate\Database\Eloquent\Builder;
 #[AllowDynamicProperties]
 class User extends BaseUser
 {
-    public function posts()
+    public function posts(): HasMany
     {
         return $this->hasMany(Post::class, 'author_id');
     }
