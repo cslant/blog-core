@@ -1,6 +1,6 @@
 <?php
 
-namespace  CSlant\Blog\Core\Http\Repositories;
+namespace CSlant\Blog\Core\Http\Repositories;
 
 use Botble\Support\Repositories\Eloquent\RepositoriesAbstract;
 use CSlant\Blog\Core\Models\Post;
