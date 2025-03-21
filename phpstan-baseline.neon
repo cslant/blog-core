@@ -18,3 +18,5 @@ parameters:
           path: src/Models/*.php
         -
           identifier: missingType.generics
+        -
+          identifier: method.notFound
