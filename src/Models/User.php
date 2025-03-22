@@ -37,10 +37,9 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
 #[AllowDynamicProperties]
 class User extends BaseUser
 {
-    protected $appends = ['posts_count'];
-
     /**
-     * Attribute posts_count
+     * Defining an accessor posts count
+     * ->posts_count
      *
      * @return int
      */
