@@ -22,6 +22,7 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
  * @property string $username
  * @property object $permissions
  * @property string $avatar_url Property for avatar image url
+ * @property int $posts_count
  * @property null|Role $roles
  * @property Post[] $posts
  *
