@@ -37,6 +37,18 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
 #[AllowDynamicProperties]
 class User extends BaseUser
 {
+    protected $appends = ['posts_count'];
+
+    /**
+     * Attribute posts_count
+     *
+     * @return int
+     */
+    public function getPostsCountAttribute(): int
+    {
+        return $this->posts()->count();
+    }
+
     public function posts(): HasMany
     {
         return $this->hasMany(Post::class, 'author_id');
