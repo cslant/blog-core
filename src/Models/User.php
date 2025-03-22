@@ -22,6 +22,7 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
  * @property string $username
  * @property object $permissions
  * @property string $avatar_url Property for avatar image url
+ * @property int $posts_count
  * @property null|Role $roles
  * @property Post[] $posts
  *
@@ -36,6 +37,17 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
 #[AllowDynamicProperties]
 class User extends BaseUser
 {
+    /**
+     * Defining an posts count accessor
+     * ->posts_count
+     *
+     * @return int
+     */
+    public function getPostsCountAttribute(): int
+    {
+        return $this->posts()->count();
+    }
+
     public function posts(): HasMany
     {
         return $this->hasMany(Post::class, 'author_id');
