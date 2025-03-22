@@ -38,7 +38,7 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
 class User extends BaseUser
 {
     /**
-     * Defining an accessor posts count
+     * Defining an posts count accessor
      * ->posts_count
      *
      * @return int
