@@ -3,10 +3,10 @@
 namespace CSlant\Blog\Core\Models;
 
 use AllowDynamicProperties;
+use Carbon\Carbon;
 use CSlant\Blog\Core\Models\Base\BaseUser;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Relations\HasMany;
-use Carbon\Carbon;
 
 /**
  * Class User
