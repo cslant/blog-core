@@ -16,4 +16,6 @@ return [
     'api_url_with_path' => env('BLOG_API_URL', 'https://cslant.com') . '/' . env('BLOG_API_PATH', 'api/blog'),
 
     'laravel_domain' => env('LARAVEL_BLOG_DOMAIN', 'no-accept-domain'),
+
+    'expiration_view_time' => env('EXPIRATION_VIEW_TIME')
 ];
