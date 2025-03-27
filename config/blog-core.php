@@ -17,5 +17,5 @@ return [
 
     'laravel_domain' => env('LARAVEL_BLOG_DOMAIN', 'no-accept-domain'),
 
-    'expiration_view_time' => env('EXPIRATION_VIEW_TIME')
+    'expiration_view_time' => env('EXPIRATION_VIEW_TIME'),
 ];
