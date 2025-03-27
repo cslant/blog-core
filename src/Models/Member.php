@@ -2,7 +2,7 @@
 
 namespace CSlant\Blog\Core\Models;
 
-use \Botble\Member\Models\Member as BaseMember;
+use Botble\Member\Models\Member as BaseMember;
 
 /**
  * Class Member
