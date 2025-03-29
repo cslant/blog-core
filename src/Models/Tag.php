@@ -22,6 +22,7 @@ use Illuminate\Database\Eloquent\Relations\HasOne;
  * @property Carbon $created_at
  * @property Carbon $updated_at
  * @property Slug $slug
+ * @property int $posts_count
  *
  * @method static Builder|Tag newModelQuery()
  * @method static Builder|Tag newQuery()
@@ -44,5 +45,16 @@ class Tag extends BaseTag
     {
         return $this->hasOne(Slug::class, 'reference_id', 'id')
             ->where('reference_type', $this->getBaseModel());
+    }
+
+    /**
+     * Defining an posts count accessor
+     * ->posts_count
+     *
+     * @return int
+     */
+    public function getPostsCountAttribute(): int
+    {
+        return $this->posts()->count();
     }
 }
