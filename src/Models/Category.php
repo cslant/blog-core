@@ -24,6 +24,7 @@ use Illuminate\Database\Eloquent\Relations\HasOne;
  * @property int $order
  * @property int $is_featured
  * @property int $is_default
+ * @property int $posts_count
  * @property Carbon $created_at
  * @property Carbon $updated_at
  * @property Slug $slug
@@ -52,5 +53,16 @@ class Category extends BaseCategory
     {
         return $this->hasOne(Slug::class, 'reference_id', 'id')
             ->where('reference_type', $this->getBaseModel());
+    }
+
+    /**
+     * Defining an posts count accessor
+     * ->posts_count
+     *
+     * @return int
+     */
+    public function getPostsCountAttribute(): int
+    {
+        return $this->posts()->count();
     }
 }
