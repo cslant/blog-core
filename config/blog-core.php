@@ -17,5 +17,5 @@ return [
 
     'laravel_domain' => env('LARAVEL_BLOG_DOMAIN', 'no-accept-domain'),
 
-    'view_throttle_minutes' => env('EXPIRATION_VIEW_TIME')
+    'view_throttle_minutes' => env('BLOG_VIEW_THROTTLE_MINUTES', 60)
 ];
