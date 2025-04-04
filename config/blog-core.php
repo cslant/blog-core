@@ -18,4 +18,6 @@ return [
     'laravel_domain' => env('LARAVEL_BLOG_DOMAIN', 'no-accept-domain'),
 
     'view_throttle_minutes' => env('BLOG_VIEW_THROTTLE_MINUTES', 60),
+
+    'blog_api_default_rate_limit' => env('BLOG_API_DEFAULT_RATE_LIMIT', 50),
 ];
