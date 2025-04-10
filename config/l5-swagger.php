@@ -46,6 +46,7 @@ return [
                 'annotations' => [
                     base_path('app'),
                     base_path('packages/blog-api-package/src'),
+                    base_path(env('BLOG_PRIVATE_MODULE_PATH', 'app')),
                 ],
             ],
         ],
