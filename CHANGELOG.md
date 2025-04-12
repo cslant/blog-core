@@ -2,6 +2,29 @@
 
 Here you can see the full list of changes between each Blog Core release.
 
+## v2.0.0 - 2025-04-12
+
+### What's Changed
+
+* Update phpstan.yml by @tanhongit in https://github.com/cslant/blog-core/pull/35
+* Fix/analyse dependent by @tanhongit in https://github.com/cslant/blog-core/pull/36
+* Fix styling by @tanhongit in https://github.com/cslant/blog-core/pull/37
+* fix: update property for post by @pxthinh in https://github.com/cslant/blog-core/pull/38
+* #64 fix: add action for core by @tanhongit in https://github.com/cslant/blog-core/pull/39
+* Feature/action extend controller by @tanhongit in https://github.com/cslant/blog-core/pull/40
+* #28 feat: add property posts_count by @pxthinh in https://github.com/cslant/blog-core/pull/42
+* Feature/add property user by @pxthinh in https://github.com/cslant/blog-core/pull/43
+* feat: add relationship with count post by @pxthinh in https://github.com/cslant/blog-core/pull/45
+* Feat/config expieration view time env by @TonyDuong0509 in https://github.com/cslant/blog-core/pull/44
+* Feature/add property user by @pxthinh in https://github.com/cslant/blog-core/pull/48
+* feat: add variable default rate limit to file env. by @TonyDuong0509 in https://github.com/cslant/blog-core/pull/49
+
+### New Contributors
+
+* @TonyDuong0509 made their first contribution in https://github.com/cslant/blog-core/pull/44
+
+**Full Changelog**: https://github.com/cslant/blog-core/compare/v1.0.0...v2.0.0
+
 ## v1.0.0 - 2025-02-12
 
 **Full Changelog**: https://github.com/cslant/blog-core/compare/v0.5.0...v1.0.0
