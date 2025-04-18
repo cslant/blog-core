@@ -56,4 +56,51 @@ class Post extends BasePost
         return $this->hasOne(Slug::class, 'reference_id', 'id')
             ->where('reference_type', $this->getBaseModel());
     }
+
+    /**
+     * Like the post by the given user
+     *
+     * @param \CSlant\Blog\Core\Models\User $user
+     * @return bool
+     */
+    public function likeBy($user): bool
+    {
+        $this->likes()->create([
+            'user_id' => $user->id,
+            'type' => \CSlant\LaravelLike\Enums\InteractionTypeEnum::LIKE,
+        ]);
+
+        return true;
+    }
+
+    /**
+     * Unlike the post by the given user
+     *
+     * @param \CSlant\Blog\Core\Models\User $user
+     * @return bool
+     */
+    public function unlikeBy($user): bool
+    {
+        return $this->likes()
+            ->where('user_id', $user->id)
+            ->where('type', \CSlant\LaravelLike\Enums\InteractionTypeEnum::LIKE)
+            ->delete();
+    }
+
+    /**
+     * Check if the post is liked by the user
+     *
+     * @param \CSlant\Blog\Core\Models\User $user
+     * @return bool
+     */
+    public function isLikedBy($user)
+    {
+        if (!$user) {
+            return false;
+        }
+
+        return $this->likes()
+            ->where('user_id', $user->id)
+            ->exists();
+    }
 }

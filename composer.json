@@ -63,7 +63,8 @@
     "pestphp/pest": "^v3.7.4",
     "phpstan/extension-installer": "^1.4",
     "phpstan/phpstan-deprecation-rules": "^2.0.1",
-    "phpstan/phpstan-phpunit": "^2.0.4"
+    "phpstan/phpstan-phpunit": "^2.0.4",
+    "cslant/laravel-like": "^2.0"
   },
   "scripts": {
     "a": "vendor/bin/phpstan analyse",
