@@ -42,6 +42,7 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
 class User extends BaseUser
 {
     use UserHasInteraction;
+
     /**
      * Defining an posts count accessor
      * ->posts_count
