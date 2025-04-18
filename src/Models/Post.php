@@ -51,6 +51,7 @@ use Illuminate\Database\Eloquent\Relations\HasOne;
 class Post extends BasePost
 {
     use HasLike;
+
     public function slug(): HasOne
     {
         return $this->hasOne(Slug::class, 'reference_id', 'id')
