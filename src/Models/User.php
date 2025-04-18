@@ -5,6 +5,7 @@ namespace CSlant\Blog\Core\Models;
 use AllowDynamicProperties;
 use Carbon\Carbon;
 use CSlant\Blog\Core\Models\Base\BaseUser;
+use CSlant\LaravelLike\UserHasInteraction;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 
@@ -40,6 +41,7 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
 #[AllowDynamicProperties]
 class User extends BaseUser
 {
+    use UserHasInteraction;
     /**
      * Defining an posts count accessor
      * ->posts_count
