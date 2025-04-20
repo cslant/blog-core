@@ -6,7 +6,6 @@ use AllowDynamicProperties;
 use CSlant\Blog\Core\Models\Base\BaseMember;
 use Botble\Member\Notifications\ResetPasswordNotification;
 use CSlant\Blog\UserCustom\Notifications\ConfirmEmailNotification;
-use Illuminate\Database\Eloquent\Builder;
 
 /**
  * @package CSlant\Blog\Core\Models
@@ -14,8 +13,11 @@ use Illuminate\Database\Eloquent\Builder;
  * @property int $id
  * @property string $first_name
  * @property string $last_name
- *
- * @method static Builder|Member newQuery()
+ * @property string $email
+ * @property string $phone
+ * @property string $dob
+ * @property string $gender
+ * @property string $description
  *
  * @mixin BaseMember
  */
