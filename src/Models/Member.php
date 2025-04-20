@@ -3,9 +3,7 @@
 namespace CSlant\Blog\Core\Models;
 
 use AllowDynamicProperties;
-use Botble\Member\Notifications\ResetPasswordNotification;
 use CSlant\Blog\Core\Models\Base\BaseMember;
-use CSlant\Blog\UserCustom\Notifications\ConfirmEmailNotification;
 
 /**
  * @package CSlant\Blog\Core\Models
@@ -24,13 +22,4 @@ use CSlant\Blog\UserCustom\Notifications\ConfirmEmailNotification;
 #[AllowDynamicProperties]
 class Member extends BaseMember
 {
-    public function sendPasswordResetNotification($token): void
-    {
-        $this->notify(new ResetPasswordNotification($token));
-    }
-
-    public function sendEmailVerificationNotification(): void
-    {
-        $this->notify(new ConfirmEmailNotification);
-    }
 }
