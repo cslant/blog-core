@@ -48,6 +48,7 @@
   },
   "require": {
     "php": "^8.2",
+    "cslant/laravel-like": "^2.0",
     "cslant/laravel-telegram-git-notifier": "^1.0",
     "darkaonline/l5-swagger": "^9.0.1",
     "laravel/scout": "^10.10",
@@ -63,8 +64,7 @@
     "pestphp/pest": "^v3.7.4",
     "phpstan/extension-installer": "^1.4",
     "phpstan/phpstan-deprecation-rules": "^2.0.1",
-    "phpstan/phpstan-phpunit": "^2.0.4",
-    "cslant/laravel-like": "^2.0"
+    "phpstan/phpstan-phpunit": "^2.0.4"
   },
   "scripts": {
     "a": "vendor/bin/phpstan analyse",
