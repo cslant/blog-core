@@ -3,8 +3,8 @@
 namespace CSlant\Blog\Core\Models;
 
 use AllowDynamicProperties;
-use CSlant\Blog\Core\Models\Base\BaseMember;
 use Botble\Member\Notifications\ResetPasswordNotification;
+use CSlant\Blog\Core\Models\Base\BaseMember;
 use CSlant\Blog\UserCustom\Notifications\ConfirmEmailNotification;
 
 /**
