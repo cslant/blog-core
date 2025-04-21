@@ -4,6 +4,7 @@ namespace CSlant\Blog\Core\Models;
 
 use AllowDynamicProperties;
 use CSlant\Blog\Core\Models\Base\BaseMember;
+use CSlant\LaravelLike\UserHasInteraction;
 
 /**
  * @package CSlant\Blog\Core\Models
@@ -22,4 +23,5 @@ use CSlant\Blog\Core\Models\Base\BaseMember;
 #[AllowDynamicProperties]
 class Member extends BaseMember
 {
+    use UserHasInteraction;
 }
