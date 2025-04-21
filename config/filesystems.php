@@ -33,7 +33,7 @@ return [
         'local' => [
             'driver' => 'local',
             'root' => env('FILESYSTEM_FILE_ROOT', storage_path('app')),
-            'url' => env('ASSETS_URL', env('APP_URL').'/storage'),
+            'url' => env('ASSET_URL', env('APP_URL').'/storage'),
             'throw' => false,
             'permissions' => [
                 'file' => [
@@ -50,7 +50,7 @@ return [
         'public' => [
             'driver' => 'local',
             'root' => env('FILESYSTEM_FILE_ROOT', storage_path('app')),
-            'url' => env('ASSETS_URL', env('APP_URL').'/storage'),
+            'url' => env('ASSET_URL', env('APP_URL').'/storage'),
             'visibility' => 'public',
             'throw' => false,
         ],
@@ -58,7 +58,7 @@ return [
         'prod' => [
             'driver' => 'local',
             'root' => env('FILESYSTEM_FILE_ROOT', storage_path('app')),
-            'url' => env('ASSETS_URL', env('APP_URL').'/storage'),
+            'url' => env('ASSET_URL', env('APP_URL').'/storage'),
             'throw' => false,
             'visibility' => 'public',
             'permissions' => [
