@@ -5,6 +5,7 @@ namespace CSlant\Blog\Core\Models;
 use AllowDynamicProperties;
 use Carbon\Carbon;
 use CSlant\Blog\Core\Models\Base\BasePost;
+use CSlant\LaravelLike\HasLike;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Relations\HasOne;
 
@@ -49,6 +50,8 @@ use Illuminate\Database\Eloquent\Relations\HasOne;
 #[AllowDynamicProperties]
 class Post extends BasePost
 {
+    use HasLike;
+
     public function slug(): HasOne
     {
         return $this->hasOne(Slug::class, 'reference_id', 'id')
