@@ -9,6 +9,7 @@ use CSlant\LaravelLike\HasLike;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Relations\HasOne;
 use FriendsOfBotble\Comment\Models\Comment;
+use Illuminate\Database\Eloquent\Relations\MorphMany;
 
 /**
  * Class Post
@@ -60,7 +61,7 @@ class Post extends BasePost
             ->where('reference_type', $this->getBaseModel());
     }
 
-    public function comments()
+    public function comments(): MorphMany
     {
         return $this->morphMany('FriendsOfBotble\Comment\Models\Comment', 'reference');
     }
