@@ -8,6 +8,7 @@ use CSlant\Blog\Core\Models\Base\BasePost;
 use CSlant\LaravelLike\HasLike;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Relations\HasOne;
+use FriendsOfBotble\Comment\Models\Comment;
 
 /**
  * Class Post
@@ -30,6 +31,7 @@ use Illuminate\Database\Eloquent\Relations\HasOne;
  * @property string $url
  * @property Tag[] $tags
  * @property Category[] $categories
+ * @property Comment[] $comments
  * @property string $image
  * @property string $author
  *
@@ -56,5 +58,10 @@ class Post extends BasePost
     {
         return $this->hasOne(Slug::class, 'reference_id', 'id')
             ->where('reference_type', $this->getBaseModel());
+    }
+
+    public function comments()
+    {
+        return $this->morphMany('FriendsOfBotble\Comment\Models\Comment', 'reference');
     }
 }
