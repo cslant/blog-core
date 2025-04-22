@@ -6,9 +6,9 @@ use AllowDynamicProperties;
 use Carbon\Carbon;
 use CSlant\Blog\Core\Models\Base\BasePost;
 use CSlant\LaravelLike\HasLike;
+use FriendsOfBotble\Comment\Models\Comment;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Relations\HasOne;
-use FriendsOfBotble\Comment\Models\Comment;
 use Illuminate\Database\Eloquent\Relations\MorphMany;
 
 /**
