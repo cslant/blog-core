@@ -24,6 +24,7 @@ use CSlant\Blog\Core\Models\Base\BaseComment;
  * @property string $status
  * @property string $ip_address
  * @property string $user_agent
+ * @property Member $author
  *
  * @mixin BaseComment
  */
