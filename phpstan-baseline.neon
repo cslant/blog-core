@@ -3,6 +3,7 @@ parameters:
         - src/Http/*/Base/*.php
         - src/Facades/Base/*.php
         - src/Models/Base/*.php
+        - src/Models/Post.php
         - src/Helpers/Base/*.php
         - src/Supports/Base/*.php
         - src/Http/Actions/Action.php
