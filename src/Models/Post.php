@@ -9,7 +9,6 @@ use CSlant\LaravelLike\HasLike;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Relations\HasOne;
 use Illuminate\Database\Eloquent\Relations\MorphMany;
-use CSlant\Blog\Core\Models\Comment;
 
 /**
  * Class Post
