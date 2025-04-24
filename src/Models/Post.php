@@ -68,6 +68,6 @@ class Post extends BasePost
      */
     public function comments(): MorphMany
     {
-        return $this->morphMany(\FriendsOfBotble\Comment\Models\Comment::class, 'reference');
+        return $this->morphMany(\CSlant\Blog\Core\Models\Comment::class, 'reference');
     }
 }
