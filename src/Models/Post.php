@@ -8,6 +8,7 @@ use CSlant\Blog\Core\Models\Base\BasePost;
 use CSlant\LaravelLike\HasLike;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Relations\HasOne;
+use Illuminate\Database\Eloquent\Relations\MorphMany;
 
 /**
  * Class Post
@@ -30,6 +31,7 @@ use Illuminate\Database\Eloquent\Relations\HasOne;
  * @property string $url
  * @property Tag[] $tags
  * @property Category[] $categories
+ * @property Comment[] $comments
  * @property string $image
  * @property string $author
  *
@@ -56,5 +58,15 @@ class Post extends BasePost
     {
         return $this->hasOne(Slug::class, 'reference_id', 'id')
             ->where('reference_type', $this->getBaseModel());
+    }
+
+    /**
+     * The Post has many relationships with the Comment.
+     *
+     * @return MorphMany
+     */
+    public function comments(): MorphMany
+    {
+        return $this->morphMany(Comment::class, 'reference');
     }
 }
