@@ -61,6 +61,11 @@ class Post extends BasePost
             ->where('reference_type', $this->getBaseModel());
     }
 
+    /**
+     * Post has many relationship with the Comment.
+     *
+     * @return MorphMany
+     */
     public function comments(): MorphMany
     {
         return $this->morphMany('FriendsOfBotble\Comment\Models\Comment', 'reference');
