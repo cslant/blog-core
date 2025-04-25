@@ -61,7 +61,7 @@ class Post extends BasePost
     }
 
     /**
-     * Post has many relationship with the Comment.
+     * The Post has many relationships with the Comment.
      *
      * @return MorphMany
      */
