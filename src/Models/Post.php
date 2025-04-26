@@ -103,7 +103,7 @@ class Post extends BasePost
      *
      * @return bool
      */
-    public function isLikedBy(int $userId): bool
+    public function isCommentBy(int $userId): bool
     {
         return $this->isInteractedCommentBy($userId);
     }
