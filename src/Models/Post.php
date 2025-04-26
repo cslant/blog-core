@@ -91,20 +91,8 @@ class Post extends BasePost
      *
      * @return bool
      */
-    public function isInteractedCommentBy(int $userId): bool
-    {
-        return $this->withInteractionCommentBy($userId)->exists();
-    }
-
-    /**
-     * Check if the model has been interacted by the given user.
-     *
-     * @param  int  $userId
-     *
-     * @return bool
-     */
     public function isCommentBy(int $userId): bool
     {
-        return $this->isInteractedCommentBy($userId);
+        return $this->withInteractionCommentBy($userId)->exists();
     }
 }
