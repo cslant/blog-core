@@ -95,4 +95,14 @@ class Post extends BasePost
     {
         return $this->withInteractionCommentBy($userId)->exists();
     }
+
+    /**
+     * Get the count of comments.
+     *
+     * @return int
+     */
+    public function commentsCount(): int
+    {
+        return $this->comments()->count();
+    }
 }
