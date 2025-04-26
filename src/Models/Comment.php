@@ -4,6 +4,7 @@ namespace CSlant\Blog\Core\Models;
 
 use AllowDynamicProperties;
 use CSlant\Blog\Core\Models\Base\BaseComment;
+use Illuminate\Database\Eloquent\Builder;
 
 /**
  * Class Post
@@ -25,6 +26,12 @@ use CSlant\Blog\Core\Models\Base\BaseComment;
  * @property string $ip_address
  * @property string $user_agent
  * @property Member $author
+ *
+ * @method static Builder|Post newModelQuery()
+ * @method static Builder|Post newQuery()
+ * @method static Builder|Post query()
+ * @method static Builder|Post first()
+ * @method static Builder|Post count()
  *
  * @mixin BaseComment
  */
