@@ -5,7 +5,6 @@ namespace CSlant\Blog\Core\Models;
 use AllowDynamicProperties;
 use Carbon\Carbon;
 use CSlant\Blog\Core\Models\Base\BasePost;
-use CSlant\LaravelLike\Enums\InteractionTypeEnum;
 use CSlant\LaravelLike\HasLike;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Relations\HasOne;
