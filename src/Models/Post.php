@@ -69,4 +69,30 @@ class Post extends BasePost
     {
         return $this->morphMany(Comment::class, 'reference');
     }
+
+    /**
+     * Get the interaction of the given user.
+     *
+     * @param  int  $userId
+     *
+     * @return MorphMany
+     */
+    public function withInteractionCommentBy(int $userId): MorphMany
+    {
+        $query = $this->comments()->where('author_id', $userId);
+
+        return $query;
+    }
+
+    /**
+     * Check if the model has been interacted by the given user.
+     *
+     * @param  int  $userId
+     *
+     * @return bool
+     */
+    public function isCommentBy(int $userId): bool
+    {
+        return $this->withInteractionCommentBy($userId)->exists();
+    }
 }
