@@ -79,9 +79,7 @@ class Post extends BasePost
      */
     public function withInteractionCommentBy(int $userId): MorphMany
     {
-        $query = $this->comments()->where('author_id', $userId);
-
-        return $query;
+        return $this->comments()->where('author_id', $userId);
     }
 
     /**
