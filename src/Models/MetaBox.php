@@ -15,12 +15,12 @@ use Illuminate\Database\Eloquent\Model;
  *
  * @property int $id
  * @property string $meta_key
- * @property object $meta_value
+ * @property array $meta_value
  * @property int $reference_id
  * @property string $reference_type
  * @property Carbon $created_at
  * @property Carbon $updated_at
- * @property Model $reference
+ * @property Model|Post|Category|Tag|Page $reference
  *
  * @method static Builder|MetaBox newModelQuery()
  * @method static Builder|MetaBox newQuery()
