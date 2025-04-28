@@ -2,6 +2,19 @@
 
 Here you can see the full list of changes between each Blog Core release.
 
+## v2.0.1 - 2025-04-28
+
+### What's Changed
+
+* Feature/add model member by @pxthinh in https://github.com/cslant/blog-core/pull/52
+* feat: remove function by @pxthinh in https://github.com/cslant/blog-core/pull/53
+* Feat/use trait package to call function #50 by @TonyDuong0509 in https://github.com/cslant/blog-core/pull/51
+* Feature/add relationship comment by @pxthinh in https://github.com/cslant/blog-core/pull/54
+* feat: add property member by @pxthinh in https://github.com/cslant/blog-core/pull/55
+* Feature/add relationship interacted by by @pxthinh in https://github.com/cslant/blog-core/pull/56
+
+**Full Changelog**: https://github.com/cslant/blog-core/compare/v2.0.0...v2.0.1
+
 ## v2.0.0 - 2025-04-12
 
 ### What's Changed
