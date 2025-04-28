@@ -6,6 +6,7 @@ use AllowDynamicProperties;
 use Carbon\Carbon;
 use CSlant\Blog\Core\Models\Base\BaseMetaBox;
 use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Database\Eloquent\Model;
 
 /**
  * Class MetaBox
@@ -14,11 +15,12 @@ use Illuminate\Database\Eloquent\Builder;
  *
  * @property int $id
  * @property string $meta_key
- * @property string $meta_value
+ * @property object $meta_value
  * @property int $reference_id
  * @property string $reference_type
  * @property Carbon $created_at
  * @property Carbon $updated_at
+ * @property Model $reference
  *
  * @method static Builder|MetaBox newModelQuery()
  * @method static Builder|MetaBox newQuery()
@@ -37,10 +39,7 @@ use Illuminate\Database\Eloquent\Builder;
 #[AllowDynamicProperties]
 class MetaBox extends BaseMetaBox
 {
-    protected $fillable = [
-        'meta_key',
-        'meta_value',
-        'reference_id',
-        'reference_type',
+    protected $casts = [
+        'meta_value' => 'json',
     ];
 }
