@@ -20,7 +20,7 @@ use Illuminate\Database\Eloquent\Model;
  * @property string $reference_type
  * @property Carbon $created_at
  * @property Carbon $updated_at
- * @property Model|Post|Category|Tag|Page $reference
+ * @property Category|Model|Page|Post|Tag $reference
  *
  * @method static Builder|MetaBox newModelQuery()
  * @method static Builder|MetaBox newQuery()
