@@ -39,7 +39,4 @@ use Illuminate\Database\Eloquent\Model;
 #[AllowDynamicProperties]
 class MetaBox extends BaseMetaBox
 {
-    protected $casts = [
-        'meta_value' => 'json',
-    ];
 }
