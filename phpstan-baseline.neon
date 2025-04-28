@@ -9,8 +9,6 @@ parameters:
         - src/Http/Actions/Action.php
 
     ignoreErrors:
-        - message: '#Property CSlant\\Blog\\Core\\Models\\.*::\$fillable has no type specified#'
-          path: src/Models/*.php
         - message: '#Call to an undefined method CSlant\\Blog\\Core\\Models\\.*::hasOne\(\).#'
           path: src/Models/*.php
         - message: '#.*is used zero times and is not analysed#'

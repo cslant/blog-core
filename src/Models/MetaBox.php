@@ -15,7 +15,7 @@ use Illuminate\Database\Eloquent\Model;
  *
  * @property int $id
  * @property string $meta_key
- * @property array $meta_value
+ * @property $meta_value
  * @property int $reference_id
  * @property string $reference_type
  * @property Carbon $created_at
