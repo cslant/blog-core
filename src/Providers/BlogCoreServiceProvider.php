@@ -16,6 +16,8 @@ class BlogCoreServiceProvider extends ServiceProvider
         $this->registerAssetLoading();
 
         $this->registerAssetPublishing();
+
+        $this->loadMigrationsFrom(__DIR__.'/../../database/migrations');
     }
 
     /**
