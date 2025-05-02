@@ -29,6 +29,7 @@ use Illuminate\Database\Eloquent\Relations\HasOne;
  * @property Carbon $updated_at
  * @property Slug $slug
  * @property string $url
+ * @property string $image
  * @property Category $parent
  * @property Category[] $children
  *
