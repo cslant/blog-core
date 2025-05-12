@@ -48,11 +48,11 @@ class User extends BaseUser
      */
     public function getPostsCountAttribute(): int
     {
-        return $this->posts()->count();
+        return $this->posts()->wherePublished()->count();
     }
 
     public function posts(): HasMany
     {
-        return $this->hasMany(Post::class, 'author_id');
+        return $this->hasMany(Post::class, 'author_id')->wherePublished();
     }
 }

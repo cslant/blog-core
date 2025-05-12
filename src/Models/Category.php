@@ -63,6 +63,6 @@ class Category extends BaseCategory
      */
     public function getPostsCountAttribute(): int
     {
-        return $this->posts()->count();
+        return $this->posts()->wherePublished()->count();
     }
 }
