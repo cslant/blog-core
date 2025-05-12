@@ -55,6 +55,6 @@ class Tag extends BaseTag
      */
     public function getPostsCountAttribute(): int
     {
-        return $this->posts()->count();
+        return $this->posts()->wherePublished()->count();
     }
 }
