@@ -8,6 +8,7 @@ use Illuminate\Support\Facades\DB;
 class CheckSqlModeCommand extends Command
 {
     protected $signature = 'check:sqlmode';
+
     protected $description = 'Check the current SQL mode of the database';
 
     public function handle()
