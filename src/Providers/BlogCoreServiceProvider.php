@@ -46,7 +46,8 @@ class BlogCoreServiceProvider extends ServiceProvider
     protected function registerCommands(): void
     {
         $this->commands([
-            \CSlant\Blog\Core\Commands\ListProviders::class,
+            \CSlant\Blog\Core\Commands\ListProvidersCommand::class,
+            \CSlant\Blog\Core\Commands\CheckSqlModeCommand::class,
         ]);
     }
 

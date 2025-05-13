@@ -5,7 +5,7 @@ namespace CSlant\Blog\Core\Commands;
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\App;
 
-class ListProviders extends Command
+class ListProvidersCommand extends Command
 {
     protected $signature = 'providers:list';
 
