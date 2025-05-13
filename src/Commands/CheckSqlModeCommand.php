@@ -10,7 +10,7 @@ class CheckSqlModeCommand extends Command
     protected $signature = 'check:sqlmode';
     protected $description = 'Check the current SQL mode of the database';
 
-    public function handle()
+    public function handle(): void
     {
         $mode = DB::select("SELECT @@sql_mode as sql_mode")[0]->sql_mode ?? 'unknown';
 
