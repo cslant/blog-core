@@ -13,8 +13,10 @@ defined('L5_SWAGGER_INFO_TITLE')
 || define('L5_SWAGGER_INFO_TITLE', env('L5_SWAGGER_INFO_TITLE', 'The API Documentation'));
 
 defined('L5_SWAGGER_INFO_DESCRIPTION')
-|| define('L5_SWAGGER_INFO_DESCRIPTION',
-    env('L5_SWAGGER_INFO_DESCRIPTION', 'The API Documentation for CSlant Blog - Build by cslant.com'));
+|| define(
+    'L5_SWAGGER_INFO_DESCRIPTION',
+    env('L5_SWAGGER_INFO_DESCRIPTION', 'The API Documentation for CSlant Blog - Build by cslant.com')
+);
 
 return [
     //
