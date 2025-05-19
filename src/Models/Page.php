@@ -8,12 +8,8 @@ use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Relations\HasOne;
 
 /**
- * Class Page
- *
- * @return \Illuminate\Database\Eloquent\Relations\HasOne<\CSlant\Blog\Core\Models\Slug, Page>
- * /
  * @mixin BasePage
- *@package CSlant\Blog\Core\Models
+ * @package CSlant\Blog\Core\Models
  *
  * @property int $id
  * @property string $name
