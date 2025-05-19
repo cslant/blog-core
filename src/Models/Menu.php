@@ -24,6 +24,7 @@ use Illuminate\Database\Eloquent\Builder;
  * @method static Builder|Menu whereId($value)
  * @method static Builder|Menu whereIn($column, $values, $boolean = 'and', $not = false)
  * @method static Builder|Menu with($relations)
+ * @method static Builder|Menu whenLoaded($relation, $callback = null)
  */
 #[AllowDynamicProperties]
 class Menu extends BaseMenu
