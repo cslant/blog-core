@@ -14,6 +14,8 @@ use Illuminate\Database\Eloquent\Builder;
  * @property string $name
  * @property string $slug
  * @property StatusEnum $status
+ * @property MenuLocation[] $locations
+ * @property MenuNode[] $menuNodes
  *
  * @method static Builder|Menu find($id, $columns = ['*'])
  * @method static Builder|Menu first($columns = ['*'])
