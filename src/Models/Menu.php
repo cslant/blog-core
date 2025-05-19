@@ -3,7 +3,7 @@
 namespace CSlant\Blog\Core\Models;
 
 use AllowDynamicProperties;
-use CSlant\Blog\Api\Enums\StatusEnum;
+use CSlant\Blog\Core\Enums\StatusEnum;
 use CSlant\Blog\Core\Models\Base\BaseMenu;
 use Illuminate\Database\Eloquent\Builder;
 
