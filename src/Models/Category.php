@@ -43,6 +43,7 @@ use Illuminate\Database\Eloquent\Relations\HasOne;
  * @method static Builder|Category where($column, $operator = null, $value = null, $boolean = 'and')
  * @method static Builder|Category findOrFail($id)
  * @method static Builder|Category create($data)
+ * @method static Builder|Category wherePublished()
  *
  * @mixin BaseCategory
  */
