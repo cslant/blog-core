@@ -4,6 +4,7 @@ namespace CSlant\Blog\Core\Models;
 
 use AllowDynamicProperties;
 use CSlant\Blog\Core\Models\Base\BaseComment;
+use CSlant\LaravelLike\HasLike;
 use Illuminate\Database\Eloquent\Builder;
 
 /**
@@ -38,4 +39,5 @@ use Illuminate\Database\Eloquent\Builder;
 #[AllowDynamicProperties]
 class Comment extends BaseComment
 {
+    use HasLike;
 }
