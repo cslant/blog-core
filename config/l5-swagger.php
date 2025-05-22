@@ -50,6 +50,7 @@ return [
                     base_path(env('BLOG_PRIVATE_MODULE_PATH', 'app')),
                     base_path(env('BLOG_PRIVATE_MODULES_THEME_OPTION_PATH', 'app')),
                     base_path(env('BLOG_PRIVATE_MODULES_INTERACTION_PATH', 'app')),
+                    base_path(env('BLOG_PRIVATE_MODULES_USER_PATH', 'app')),
                     base_path(env('BLOG_PRIVATE_MODULES_MENU_PATH', 'app')),
                 ],
             ],
