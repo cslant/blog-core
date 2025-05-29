@@ -27,6 +27,7 @@ use Illuminate\Database\Eloquent\Builder;
  * @property string $ip_address
  * @property string $user_agent
  * @property Member $author
+ * @property Comment $replies
  *
  * @method static Builder|Post newModelQuery()
  * @method static Builder|Post newQuery()
