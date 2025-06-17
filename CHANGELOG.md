@@ -2,6 +2,16 @@
 
 Here you can see the full list of changes between each Blog Core release.
 
+## v2.0.2 - 2025-06-17
+
+### What's Changed
+
+* feat: update where status for relationship by @pxthinh in https://github.com/cslant/blog-core/pull/59
+* chore(deps): bump dependabot/fetch-metadata from 2.3.0 to 2.4.0 by @dependabot in https://github.com/cslant/blog-core/pull/60
+* chore(deps): bump stefanzweifel/git-auto-commit-action from 5 to 6 by @dependabot in https://github.com/cslant/blog-core/pull/61
+
+**Full Changelog**: https://github.com/cslant/blog-core/compare/v2.0.1...v2.0.2
+
 ## v2.0.1 - 2025-04-28
 
 ### What's Changed
