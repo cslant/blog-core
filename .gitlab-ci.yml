@@ -21,7 +21,6 @@ analyse:
   tags:
     - csl-176
   script:
-    - cd $HOME_PATH
     - composer install --prefer-dist --no-progress
     # - find . -type f -name '*.php' -not -path './vendor/*' -not -path './storage/*' -exec php -l {} \;
     - composer a
