@@ -18,11 +18,9 @@ build:
 
 analyse:
   stage: test
-  tags:
-    - csl-176
+  image: composer
   script:
     - composer install --prefer-dist --no-progress
-    # - find . -type f -name '*.php' -not -path './vendor/*' -not -path './storage/*' -exec php -l {} \;
     - composer a
   rules:
     - if: $CI_PIPELINE_SOURCE == 'push' || $CI_PIPELINE_SOURCE == 'merge_request_event'
