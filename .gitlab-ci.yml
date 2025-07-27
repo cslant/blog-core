@@ -24,7 +24,10 @@ analyse:
   before_script:
     - php -v
     - composer --version
+    - pwd
+    - ls -la
   script:
+    - cd $CI_PROJECT_DIR
     - composer install --prefer-dist --no-progress
     - composer a
   rules:
