@@ -19,6 +19,11 @@ build:
 analyse:
   stage: test
   image: composer
+  tags:
+    - csl-176
+  before_script:
+    - php -v
+    - composer --version
   script:
     - composer install --prefer-dist --no-progress
     - composer a
