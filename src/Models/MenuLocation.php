@@ -26,4 +26,6 @@ use Illuminate\Database\Eloquent\Builder;
  * @method static Builder|MenuLocation whenLoaded($relation, $callback = null)
  */
 #[AllowDynamicProperties]
-class MenuLocation extends BaseMenuLocation {}
+class MenuLocation extends BaseMenuLocation
+{
+}
