@@ -50,7 +50,7 @@
     "php": "^8.2",
     "cslant/laravel-like": "^2.0",
     "cslant/laravel-telegram-git-notifier": "^1.0",
-    "darkaonline/l5-swagger": "^9.0.1",
+    "darkaonline/l5-swagger": "^11.1.0",
     "laravel/scout": "^10.10",
     "matchish/laravel-scout-elasticsearch": "^v7.11",
     "sentry/sentry-laravel": "^4.11",
